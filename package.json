@@ -1,9 +1,12 @@
 {
   "name": "@examples/next-minimal",
   "version": "10.0.0-proxy-beta.15",
+  "homepage": "https://scarlett1130.github.io/next-chat",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d .next",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
